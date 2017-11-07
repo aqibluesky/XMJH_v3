@@ -4,6 +4,7 @@
 static void WAV_Head_Init(WaveHeader *pwavhead);
 static uint8_t VAD(int16_t *VocBuf);
 
+
 void Voice_Record(void)
 {
 	uint32_t i,j;
@@ -120,8 +121,6 @@ void Voice_Record(void)
 }
 
 
-
-
 static void WAV_Head_Init(WaveHeader *pwavhead) //初始化WAV头
 {
 	pwavhead->riff.ChunkID = 0x46464952;					//"RIFF"
@@ -138,7 +137,6 @@ static void WAV_Head_Init(WaveHeader *pwavhead) //初始化WAV头
 	pwavhead->data.ChunkID = 0x61746164;					//"data"
 	pwavhead->data.ChunkSize = 0;									//数据大小,还需要计算
 }
-
 
 
 static uint8_t VAD(int16_t *VocBuf)

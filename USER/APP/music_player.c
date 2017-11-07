@@ -13,6 +13,7 @@ static uint8_t MP3_Get_Info(char *PathBuf);
 static uint8_t WAV_Get_Info(char *PathBuf);
 static uint8_t Word_Cmpare(char *pText,char *pKey);
 
+
 uint8_t Music_Play(void)
 {
 	uint8_t fun_res = 0;

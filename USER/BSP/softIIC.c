@@ -135,8 +135,6 @@ void IIC_NAck(void)
 }
 
 
-
-
 uint8_t IIC_Init(uint8_t Addr)
 {
 	uint8_t Ack;

@@ -7,7 +7,6 @@
 
 extern volatile uint8_t USART_Trans;
 
-
 //用于向8266发送AT指令的函数
 static uint8_t Esp_SendCmd(char *pCmd, uint8_t waittime, char *pRes);
 
